@@ -19,7 +19,7 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 
 # Setup
-api_key = 'AIzaSyCaXxmYK9PPy0a18ZYhzyqDgKDn7AHquZI'
+api_key = 'AIzaSyB_Ny_IKxt-ICK46zmqHccDUzidBifftjg'
 channel_id = 'UCK7AyP3Gg4ZURJgUbakZ1ug'
 youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=api_key)
 
