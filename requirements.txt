@@ -1,0 +1,14 @@
+pandas
+altair
+wordcloud
+Pillow
+numpy
+tensorflow
+scikit-learn
+isodate
+beautifulsoup4
+emoji
+nltk
+google-api-python-client
+google-auth-oauthlib
+google-auth
