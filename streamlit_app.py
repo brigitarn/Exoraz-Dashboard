@@ -15,9 +15,12 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 import subprocess
-if "setup_ran" not in st.session_state:
-    subprocess.run(["python", "setup.py"], check=True)
-    st.session_state.setup_ran = True
+import streamlit as st
+import setup
+
+if 'setup_done' not in st.session_state:
+    setup.run_setup()
+    st.session_state['setup_done'] = True
 
 def predict_future_months(model, df, feature_scaler, target_scaler, features, n_months=6):
     from datetime import datetime
