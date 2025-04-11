@@ -1,4 +1,5 @@
 import subprocess
+import pandas as pd
 
 print("Running fetch_comments.py...")
 subprocess.run(["python", "fetch_comments.py"], check=True)
